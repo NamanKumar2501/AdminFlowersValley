@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Admin Flowers Valley</string>
+    <string name="my_dashboard">My Dashboard</string>
+    <string name="add_flowers">Add Flowers</string>
+    <string name="view_flower">View Flower</string>
+    <string name="banner">Banner</string>
+    <string name="view_banner">View Banner</string>
+    <string name="order">Order</string>
+    <string name="add_new_flower">Add New Flower</string>
+    <string name="view_flowers_list">View Flowers List</string>
+    <string name="add_new_banner">Add new Banner</string>
+    <string name="view_banners_list">View Banners List</string>
+    <string name="view_all_orders">View all Orders</string>
+    <string name="admin_profile">Admin Profile</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="mobile">Mobile</string>
+    <string name="to_your_account">to your Account</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="verify">Verify</string>
+    <string name="_6_items">6 Items</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="flowers_valley">Flowers Valley</string>
+    <string name="don_t_have_an_account">Don\'t have an account</string>
+    <string name="sign_up">Sign up</string>
+    <string name="send_otp">Send OTP</string>
+</resources>
