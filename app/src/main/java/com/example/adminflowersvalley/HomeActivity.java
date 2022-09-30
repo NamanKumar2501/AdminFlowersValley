@@ -74,14 +74,23 @@ public class HomeActivity extends AppCompatActivity {
             Log.i(TAG, "onActivityResult: " + resultCode);
             Log.i(TAG, "onActivityResult: " + data);
 
-            if (data != null && data.getData() != null) {
+            // List of Banner
+            if (requestCode == 101 && data != null && data.getData() != null) {
                 Uri mImageUri = data.getData();
-                Log.i(TAG, "onActivityResult: " + mImageUri);
                 Bundle bundle = new Bundle();
                 bundle.putString("image_uri", mImageUri.toString());
 
-                Toast.makeText(this, mImageUri + "", Toast.LENGTH_SHORT).show();
                 BannerFragment addBannerFragment = new BannerFragment();
+                addBannerFragment.setArguments(bundle);
+                replaceFragment(addBannerFragment);
+
+                // List of Flowers
+            } else if (requestCode == 102 && data != null && data.getData() != null) {
+                Uri mImageUri = data.getData();
+                Bundle bundle = new Bundle();
+                bundle.putString("image_uri", mImageUri.toString());
+
+                AddFlowerFragment addBannerFragment = new AddFlowerFragment();
                 addBannerFragment.setArguments(bundle);
                 replaceFragment(addBannerFragment);
             } else {

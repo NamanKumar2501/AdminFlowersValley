@@ -18,10 +18,12 @@
             android:layout_column="0"
             android:layout_row="0"
             android:id="@+id/add_flower"
+            android:outlineSpotShadowColor="@color/black"
+            android:outlineAmbientShadowColor="@color/black"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            android:layout_margin="20dp">
+            android:layout_margin="15dp">
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -38,7 +40,7 @@
                     android:layout_height="wrap_content"
                     android:text="Add Flower"
                     android:layout_marginTop="5dp"
-                    android:textSize="20dp"/>
+                    android:textSize="20sp"/>
 
 
             </androidx.appcompat.widget.LinearLayoutCompat>
@@ -51,10 +53,12 @@
             android:layout_column="1"
             android:layout_row="0"
             android:id="@+id/view_all_flower"
+            android:outlineSpotShadowColor="@color/black"
+            android:outlineAmbientShadowColor="@color/black"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            android:layout_margin="20dp">
+            android:layout_margin="15dp">
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -70,7 +74,7 @@
                     android:layout_height="wrap_content"
                     android:text="     View \nAll Flower"
                     android:layout_marginTop="5dp"
-                    android:textSize="20dp"/>
+                    android:textSize="20sp"/>
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -82,10 +86,12 @@
             android:layout_column="0"
             android:layout_row="1"
             android:id="@+id/banner"
+            android:outlineSpotShadowColor="@color/black"
+            android:outlineAmbientShadowColor="@color/black"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            android:layout_margin="20dp">
+            android:layout_margin="15dp">
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -99,9 +105,9 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Banner"
+                    android:text="@string/add_banner"
                     android:layout_marginTop="5dp"
-                    android:textSize="20dp"/>
+                    android:textSize="20sp"/>
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -115,8 +121,10 @@
             android:id="@+id/view_all_banner"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
+            android:outlineSpotShadowColor="@color/black"
+            android:outlineAmbientShadowColor="@color/black"
             android:layout_gravity="fill"
-            android:layout_margin="20dp">
+            android:layout_margin="15dp">
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -132,7 +140,7 @@
                     android:layout_height="wrap_content"
                     android:text="     View \nAll Banner"
                     android:layout_marginTop="5dp"
-                    android:textSize="20dp"/>
+                    android:textSize="20sp"/>
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -144,10 +152,12 @@
             android:layout_column="0"
             android:layout_row="2"
             android:layout_rowWeight="1"
+            android:outlineSpotShadowColor="@color/black"
+            android:outlineAmbientShadowColor="@color/black"
             android:id="@+id/order"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            android:layout_margin="20dp">
+            android:layout_margin="15dp">
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -163,7 +173,7 @@
                     android:layout_height="wrap_content"
                     android:text="Order"
                     android:layout_marginTop="5dp"
-                    android:textSize="20dp"/>
+                    android:textSize="20sp"/>
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -171,31 +181,36 @@
 
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/admin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_column="1"
             android:layout_row="2"
-            android:id="@+id/admin"
             android:layout_rowWeight="1"
+            android:layout_column="1"
             android:layout_columnWeight="1"
+            android:outlineSpotShadowColor="@color/black"
+            android:outlineAmbientShadowColor="@color/black"
             android:layout_gravity="fill"
-            android:layout_margin="20dp">
+            android:layout_margin="15dp">
+
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_gravity="center_vertical|center_horizontal"
                 android:gravity="center"
-                android:layout_gravity="center_vertical|center_horizontal">
+                android:orientation="vertical">
+
                 <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="45dp"
                     android:layout_height="45dp"
-                    android:src="@drawable/profile"/>
+                    android:src="@drawable/profile" />
+
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Profile"
                     android:layout_marginTop="5dp"
-                    android:textSize="20dp"/>
+                    android:text="Profile"
+                    android:textSize="20sp" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 

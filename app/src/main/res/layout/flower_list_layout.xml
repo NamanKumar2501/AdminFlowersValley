@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/list_flower"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="4dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_banner"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_weight="30"
+            android:scaleType="fitXY"
+            android:src="@drawable/view_flower"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_weight="70"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/flower_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/flower_name"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/flower_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="129"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q. 10"
+                android:textSize="20sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.cardview.widget.CardView>

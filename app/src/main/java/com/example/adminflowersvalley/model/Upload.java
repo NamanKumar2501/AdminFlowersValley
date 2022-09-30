@@ -1,4 +1,4 @@
-package com.example.adminflowersvalley;
+package com.example.adminflowersvalley.model;
 
 public class Upload {
     private String mName;

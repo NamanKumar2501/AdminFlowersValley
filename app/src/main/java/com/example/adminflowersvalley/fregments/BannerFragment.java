@@ -23,10 +23,11 @@ import android.webkit.MimeTypeMap;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.example.adminflowersvalley.model.BannerModel;
 import com.example.adminflowersvalley.R;
-import com.example.adminflowersvalley.Upload;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -125,15 +126,23 @@ public class BannerFragment extends Fragment {
                                     mProgressBar.setProgress(0);
                                 }
                             }, 500);
-
                             Toast.makeText(getContext(), "Upload successful", Toast.LENGTH_LONG).show();
-                            Upload upload = new Upload(mEditTextFileName.getText().toString().trim(),
-                                    taskSnapshot.getMetadata().getReference().getDownloadUrl().toString());
 
+                            Task<Uri> urlTask = taskSnapshot.getStorage().getDownloadUrl();
+                            while (!urlTask.isSuccessful()) ;
+                            Uri downloadUrl = urlTask.getResult();
+
+                            Log.i(TAG, "onSuccess: " + downloadUrl);
+
+
+                            BannerModel banner = new BannerModel(mDatabaseRef.push().getKey(), mEditTextFileName.getText().toString().trim(), downloadUrl.toString());
                             String uploadId = mDatabaseRef.push().getKey();
-                            mDatabaseRef.child(uploadId).setValue(upload);
+                            banner.setId(uploadId);
+                            mDatabaseRef.child(uploadId).setValue(banner);
                         }
                     })
+
+
                     .addOnFailureListener(new OnFailureListener() {
                         @Override
                         public void onFailure(@NonNull Exception e) {
@@ -157,7 +166,7 @@ public class BannerFragment extends Fragment {
         Intent intent = new Intent();
         intent.setType("image/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
-        startActivityForResult(intent, 101);
+        getActivity().startActivityForResult(intent, 101);
     }
 
 }
