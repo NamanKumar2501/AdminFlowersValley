@@ -21,9 +21,8 @@ import com.example.adminflowersvalley.fregments.ViewAllBannerFragment;
 import com.example.adminflowersvalley.fregments.ViewAllFlowerFragment;
 
 public class HomeActivity extends AppCompatActivity {
-
-    String fragmentName;
-    private Intent data;
+    private static final String TAG = "HomeActivity";
+    private String fragmentName = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

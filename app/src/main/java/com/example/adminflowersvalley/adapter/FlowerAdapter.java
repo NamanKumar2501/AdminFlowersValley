@@ -73,8 +73,8 @@ public class FlowerAdapter extends RecyclerView.Adapter<FlowerAdapter.ViewHolder
     private void showDialog(Flower flower) {
 
         new MaterialAlertDialogBuilder(context)
-                .setTitle("Delete Banner")
-                .setMessage("Do you want to delete this banner ?")
+                .setTitle("Delete Flower")
+                .setMessage("Do you want to delete this Flower ?")
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -86,7 +86,7 @@ public class FlowerAdapter extends RecyclerView.Adapter<FlowerAdapter.ViewHolder
                         mStorageRef.getStorage().getReferenceFromUrl(flower.getFlowerImageUrl()).delete().addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void unused) {
-                                Toast.makeText(context, "Banner deleted", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(context, "Flower deleted", Toast.LENGTH_SHORT).show();
                                 mDatabaseRef.child(flower.getFlowerId()).removeValue();
                                 flowers.remove(flower);
 

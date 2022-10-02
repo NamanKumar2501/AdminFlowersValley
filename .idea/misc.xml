@@ -24,7 +24,7 @@
         <entry key="..\:/New folder/AdminFlowersValley/app/src/main/res/layout/activity_user_login.xml" value="0.22" />
         <entry key="..\:/New folder/AdminFlowersValley/app/src/main/res/layout/activity_verify_otp.xml" value="0.18" />
         <entry key="..\:/New folder/AdminFlowersValley/app/src/main/res/layout/banner_list_layout.xml" value="0.1" />
-        <entry key="..\:/New folder/AdminFlowersValley/app/src/main/res/layout/flower_list_layout.xml" value="0.2" />
+        <entry key="..\:/New folder/AdminFlowersValley/app/src/main/res/layout/flower_list_layout.xml" value="0.1" />
         <entry key="..\:/New folder/AdminFlowersValley/app/src/main/res/layout/fragment_add_baner.xml" value="0.17527173913043478" />
         <entry key="..\:/New folder/AdminFlowersValley/app/src/main/res/layout/fragment_add_flower.xml" value="0.1" />
         <entry key="..\:/New folder/AdminFlowersValley/app/src/main/res/layout/fragment_admin.xml" value="0.15" />
@@ -35,7 +35,7 @@
         <entry key="..\:/New folder/AdminFlowersValley/app/src/main/res/layout/fragment_profile.xml" value="0.17527173913043478" />
         <entry key="..\:/New folder/AdminFlowersValley/app/src/main/res/layout/fragment_view_all_banner.xml" value="0.22" />
         <entry key="..\:/New folder/AdminFlowersValley/app/src/main/res/layout/fragment_view_all_blank.xml" value="0.2384428223844282" />
-        <entry key="..\:/New folder/AdminFlowersValley/app/src/main/res/layout/fragment_view_all_flower.xml" value="0.18" />
+        <entry key="..\:/New folder/AdminFlowersValley/app/src/main/res/layout/fragment_view_all_flower.xml" value="0.16842105263157894" />
       </map>
     </option>
   </component>

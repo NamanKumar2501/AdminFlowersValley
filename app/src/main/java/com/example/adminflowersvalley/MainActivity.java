@@ -12,7 +12,7 @@ import android.view.View;
 
 
 public class MainActivity extends AppCompatActivity {
-
+    private final String mobile = "";
     public CardView add_flower,view_all_flower,banner,view_all_banner,order,admin;
 
     @Override
