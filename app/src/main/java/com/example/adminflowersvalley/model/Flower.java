@@ -3,7 +3,7 @@ package com.example.adminflowersvalley.model;
 public class Flower {
     private String flowerId;
     private String flowerName;
-    private String flowerPrice;
+    private int flowerPrice;
     private String flowerQuantity;
     private String flowerDescription;
     private String flowerImageUrl;
@@ -13,7 +13,7 @@ public class Flower {
         //Required constructor
     }
 
-    public Flower(String flowerId, String flowerName, String flowerPrice, String flowerQuantity, String flowerDescription, String flowerImageUrl) {
+    public Flower(String flowerId, String flowerName, int flowerPrice, String flowerQuantity, String flowerDescription, String flowerImageUrl) {
         this.flowerId = flowerId;
         this.flowerName = flowerName;
         this.flowerPrice = flowerPrice;
@@ -38,11 +38,11 @@ public class Flower {
         this.flowerName = flowerName;
     }
 
-    public String getFlowerPrice() {
+    public int getFlowerPrice() {
         return flowerPrice;
     }
 
-    public void setFlowerPrice(String flowerPrice) {
+    public void setFlowerPrice(int flowerPrice) {
         this.flowerPrice = flowerPrice;
     }
 

@@ -95,7 +95,8 @@ public class AddFlowerFragment extends Fragment {
         btnAddFlower.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String strFlowerName, strFlowerPrice, strFlowerQuantity, strFlowerDescription;
+                String strFlowerName, strFlowerQuantity, strFlowerDescription;
+                int strFlowerPrice;
 
                 if (mImageUri == null) {
                     Snackbar.make(btnAddFlower, "Please Select Image.", Snackbar.LENGTH_SHORT).show();
@@ -113,7 +114,7 @@ public class AddFlowerFragment extends Fragment {
                     etFlowerDescription.requestFocus();
                 } else {
                     strFlowerName = etFlowerName.getText().toString().trim();
-                    strFlowerPrice = etFlowerPrice.getText().toString().trim();
+                    strFlowerPrice = Integer.parseInt(etFlowerPrice.getText().toString().trim());
                     strFlowerQuantity = etFlowerQuantity.getText().toString().trim();
                     strFlowerDescription = etFlowerDescription.getText().toString().trim();
 
@@ -137,7 +138,7 @@ public class AddFlowerFragment extends Fragment {
         getActivity().startActivityForResult(intent, 102);
     }
 
-    private void uploadFlower(String imageURl, String flowerName, String flowerPrice, String flowerQuantity, String flowerDescription) {
+    private void uploadFlower(String imageURl, String flowerName, int flowerPrice, String flowerQuantity, String flowerDescription) {
         if (mImageUri != null) {
             mProgressBar.setVisibility(View.VISIBLE);
             StorageReference fileReference = mStorageRef.child(System.currentTimeMillis() + "." + getFileExtension(mImageUri));

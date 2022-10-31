@@ -1,7 +1,5 @@
 package com.example.adminflowersvalley;
 
-import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
