@@ -52,9 +52,9 @@ public class FlowerAdapter extends RecyclerView.Adapter<FlowerAdapter.ViewHolder
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("flowers");
 
 
-        holder.flowerName.setText(flower.getFlowerName());
-        holder.flowerPrice.setText(flower.getFlowerPrice());
-        holder.flowerQty.setText(flower.getFlowerQuantity());
+        holder.flowerName.setText(""+flower.getFlowerName());
+        holder.flowerPrice.setText("₹ "+flower.getFlowerPrice());
+        holder.flowerQty.setText(""+flower.getFlowerQuantity());
 
         Glide.with(context)
                 .load(flower.getFlowerImageUrl())

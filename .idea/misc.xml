@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android Apps/AdminFlowersValley/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android Apps/AdminFlowersValley/app/src/main/res/drawable/dashboard_bg.xml" value="0.1415" />
+        <entry key="..\:/Android Apps/AdminFlowersValley/app/src/main/res/drawable/deshboard_bg.xml" value="0.1415" />
+        <entry key="..\:/Android Apps/AdminFlowersValley/app/src/main/res/drawable/ic_heart.xml" value="0.1205" />
+        <entry key="..\:/Android Apps/AdminFlowersValley/app/src/main/res/layout/activity_home.xml" value="0.1743659420289855" />
+        <entry key="..\:/Android Apps/AdminFlowersValley/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Android/AdminFlowersValley/app/src/main/res/drawable/dashbord_bg_design.xml" value="0.1255" />
         <entry key="..\:/Android/AdminFlowersValley/app/src/main/res/drawable/my_image_deshbord.xml" value="0.1255" />
         <entry key="..\:/Android/AdminFlowersValley/app/src/main/res/drawable/my_image_round.xml" value="0.1255" />
